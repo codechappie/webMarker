@@ -153,6 +153,10 @@ nav{
     align-items: center;
     cursor: pointer;
 }
+.loveTransition{
+    transform: scale(1.09);
+    transition: transform .4s ease-in-out;
+}
 @media screen and (max-width: 1000px){
     .content-webMarkers{
         width: 680px;
