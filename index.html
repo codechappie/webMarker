@@ -1,85 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>webMarket</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>webMarket</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-          <div class="logo">
-            <img src="images/logo-webMarker.png" alt="">
-          </div>
-          <div class="form-search" id="formSearch">
-            <div class="searcher-container">
-              <div class="image-search">
-                <img src="images/search.svg" alt="">
-              </div>
-              <input type="text" name="" id="searchInput" placeholder="Buscar marcadores...">
-              <div class="close-search" id="btn-close-search-responsive">
-                <img src="images/close.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="search-responsive" id="btn-search-responsive">
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo-webMarker.png" alt="">
+      </div>
+      <div class="form-search" id="formSearch">
+        <div class="searcher-container">
+          <div class="image-search">
             <img src="images/search.svg" alt="">
           </div>
-        </nav>
-    </header>
-    <section class="webMarkers">
-       <div class="content-webMarkers">
-        <div class="card">
-          <div class="content">
-            <div class="image">
-              <img src="images/codechappie.png" alt="">
-            </div>
-            <div class="title">
-              <h4>Lorem ipsum dolor sit.</h1>
-            </div>
-            <div class="description">
-              <p>Lorem ipsum, dolor sit Lorem ipsum  amet consectetur adipisicing elit. Esse!</p>
-            </div>
-          </div>
-          <div class="options">
-            <a href="#" class="link">
-              <img src="images/external-link.svg" alt="">
-              <span>Visitar sitio</span>
-            </a>
-            <div class="love" alt="">
-              <img src="images/love.png" alt="">
-            </div>
+          <input type="text" name="" id="searchInput" placeholder="Buscar marcadores...">
+          <div class="close-search" id="btn-close-search-responsive">
+            <img src="images/close.svg" alt="">
           </div>
         </div>
-        <div class="card">
-          <div class="content">
-            <div class="image">
-              <img src="images/codechappie.png" alt="">
-            </div>
-            <div class="title">
-              <h4>Lorem ipsum dolor sit.</h1>
-            </div>
-            <div class="description">
-              <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet. sit Lorem ipsum  amet consectetur adipisicing elit. Esse!</p>
-            </div>
+      </div>
+      <div class="search-responsive" id="btn-search-responsive">
+        <img src="images/search.svg" alt="">
+      </div>
+    </nav>
+  </header>
+  <section class="webMarkers">
+    <div class="content-webMarkers">
+      <div class="card">
+        <div class="content">
+          <div class="image">
+            <img src="images/codechappie.png" alt="">
           </div>
-          <div class="options">
-            <a href="#" class="link">
-              <img src="images/external-link.svg" alt="">
-              <span>Visitar sitio</span>
-            </a>
-            <div class="love" alt="">
-              <img src="images/love.png" alt="">
-            </div>
+          <div class="title">
+            <h4>Lorem ipsum dolor sit.</h1>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum, dolor sit Lorem ipsum amet consectetur adipisicing elit. Esse!</p>
           </div>
         </div>
-       </div>
-    </section>
+        <div class="options">
+          <a href="#" class="link">
+            <img src="images/external-link.svg" alt="">
+            <span>Visitar sitio</span>
+          </a>
+          <div class="love" alt="">
+            <img src="images/love.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="image">
+            <img src="images/codechappie.png" alt="">
+          </div>
+          <div class="title">
+            <h4>Lorem ipsum dolor sit.</h1>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet. sit Lorem ipsum amet consectetur adipisicing elit. Esse!
+            </p>
+          </div>
+        </div>
+        <div class="options">
+          <a href="#" class="link">
+            <img src="images/external-link.svg" alt="">
+            <span>Visitar sitio</span>
+          </a>
+          <div class="love" alt="">
+            <img src="images/love.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="add-new-marker">
+      <button id="btn-add-new" class="btnAdd">
+        <span class="desktop-btn-text">+</span>
+        <span class="mobile-btn-text">Agregar</span>
+      </button>
+    </div>
+  </section>
+  <div class="modal-add-new-marker" id="modal-add-new-marker">
+    <div class="contentModal">
+      <div class="HeaderModal">
+        <div class="modalTitle">
+          Agregar nuevo marcador
+        </div>
+        <div class="closeModal" id="closeModal">✖</div>
+      </div>
+      <form class="form-add-marker">
+        <div class="form-input">
+          <label for="imageIcon">Icono o imagen</label>
+          <input type="file" name="" id="imageIcon">
+        </div>
+        <div class="form-input">
+          <label for="name">Nombre</label>
+          <input type="text" name="" id="name" placeholder="Nombre del marcador">
+        </div>
+        <div class="form-input">
+          <label for="url">Link del sitio</label>
+          <input type="url" name="" id="url" placeholder="http://www.ejemplo.com">
+        </div>
+        <div class="form-input">
+          <label for="description">Descripción</label>
+          <textarea name="" id="description" cols="50" rows="4" placeholder="Agregar una descripción" style="resize: none;"></textarea>
+        </div>
+        <div class="buttonsModal">
+          <button class="cancelModal" id="cancelModal">Cancelar</button>
+          <button class="saveModal">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
